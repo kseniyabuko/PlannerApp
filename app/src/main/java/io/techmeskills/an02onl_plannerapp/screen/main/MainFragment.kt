@@ -16,9 +16,7 @@ class MainFragment : NavigationFragment<FragmentMainBinding>(R.layout.fragment_m
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         
-
         viewBinding.recyclerView.adapter = NotesRecyclerViewAdapter(viewModel.notes)
     }
 
